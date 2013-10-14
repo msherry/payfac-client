@@ -2,15 +2,16 @@
 
 #from distutils.core import setup
 from setuptools import setup
-setup(name='PayfacClient',
+setup(name='payfac',
       version='0.0.1',
       description="Python client for Litle's Payfac API",
       author='Marc Sherry',
       author_email='marc@balancedpayments.com',
       url='http://www.balancedpayments.com',
-      packages=['litleSdkPython'],
+      packages=['payfac'],
       install_requires=[
-          'PyXB==1.2.3',
+          'PyXB>=1.2.3',
+          'requests',
       ],
       classifiers=[
           'Development Status :: 5 - Production/Stable',
