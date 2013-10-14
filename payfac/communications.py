@@ -5,9 +5,9 @@ import requests
 
 class Communications(object):
 
-    def __init__(self, config):
-        self.url = config.getUrl()
-        self.auth = (config.getUser, config.getPassword())
+    def __init__(self, user, password, url):
+        self.url = url
+        self.auth = (user, password)
 
     def http_post(self, post_data):
         headers = {

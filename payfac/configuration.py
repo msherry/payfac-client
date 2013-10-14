@@ -6,8 +6,14 @@ class Configuration(object):
     def __init__(self):
         self._url = 'cert'
 
+    def getUser(self):
+        return self._user
+
     def setUser(self, user):
         self._user = user
+
+    def getPassword(self):
+        return self._password
 
     def setPassword(self, password):
         self._password = password
@@ -20,7 +26,7 @@ class Configuration(object):
 
     def _urlMapper(self, target):
         if (target.lower() == "cert"):
-            return 'https://some.uri.here'
+            return 'https://psp-cert.litle.com'
         elif(target.lower() == "prod"):
             return 'https://psp.litle.com/'
         else:

@@ -22,6 +22,6 @@
 #OTHER DEALINGS IN THE SOFTWARE.
 
 from .configuration import Configuration
-from .requests import legalEntityCreateRequest
+from .request import payfacRequest
 
-__all__ = ['Configuration', 'legalEntityCreateRequest']
+__all__ = ['Configuration', 'payfacRequest']
