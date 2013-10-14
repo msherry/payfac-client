@@ -21,4 +21,6 @@
 #FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 #OTHER DEALINGS IN THE SOFTWARE.
 
-__all__ = ['legalEntityCreateRequest']
+from .requests import legalEntityCreateRequest
+
+__all__ = ['communications', 'configuration', 'legalEntityCreateRequest']
