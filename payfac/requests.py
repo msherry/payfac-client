@@ -12,3 +12,4 @@ class legalEntityCreateRequest(object):
         requestXML = self._requestToXml()
         url = self.config.getUrl()
         responseXML = self.communications.http_post(requestXML, url=url)
+        return responseXML

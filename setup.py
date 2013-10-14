@@ -10,7 +10,7 @@ setup(name='payfac',
       url='http://www.balancedpayments.com',
       packages=['payfac'],
       install_requires=[
-          'PyXB>=1.2.3',
+          'PyXB==1.1.4',                  # FUUUUUUUU
           'requests',
       ],
       classifiers=[
