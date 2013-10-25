@@ -23,5 +23,10 @@
 
 from .configuration import Configuration
 from .request import payfacRequest
+from .response import payfacResponse
 
-__all__ = ['Configuration', 'payfacRequest']
+__all__ = [
+    'Configuration',
+    'payfacRequest',
+    'payfacResponse',
+]

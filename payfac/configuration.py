@@ -26,8 +26,8 @@ class Configuration(object):
 
     def _urlMapper(self, target):
         if (target.lower() == "cert"):
-            return 'https://psp-cert.litle.com'
+            return 'https://psp-cert.litle.com/legalentity'
         elif(target.lower() == "prod"):
-            return 'https://psp.litle.com/'
+            return 'https://psp.litle.com/legalentity'
         else:
             return target
