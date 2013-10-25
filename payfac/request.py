@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 
 from communications import Communications
+from response import payfacResponse
 
 
 class payfacRequest(object):
@@ -16,4 +17,4 @@ class payfacRequest(object):
 
     def sendRequest(self, xml):
         responseXML = self.communications.http_post(xml)
-        return responseXML
+        return payfacResponse(responseXML)
