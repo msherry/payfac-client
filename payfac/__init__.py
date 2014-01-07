@@ -24,9 +24,11 @@
 from .configuration import Configuration
 from .request import payfacRequest
 from .response import payfacResponse
+from .payfacv6XMLFields import pyxb_114 as pyxb   # HACK
 
 __all__ = [
     'Configuration',
     'payfacRequest',
     'payfacResponse',
+    'pyxb',
 ]
